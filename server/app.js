@@ -17,8 +17,8 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 
 
-app.use('/api/v1/user', userRouter);
-app.use('/api/v1/tours', requestRouter);
+app.use("/api/v1/user", userRouter);
+app.use("/api/v1/requests", requestRouter);
 
 // If the route does not match any of the above routes, code will reach here.
 // Then call this func for all HTTP method
