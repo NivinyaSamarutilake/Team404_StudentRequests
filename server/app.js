@@ -13,6 +13,9 @@ app.use(express.json());
 const globalErrorHandler = require('./controllers/errorController');
 const requestRouter = require('./routes/requestRoutes');
 const userRouter = require('./routes/userRoutes');
+app.use(express.urlencoded({extended:false}))
+app.use(express.json());
+
 
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/tours', requestRouter);
