@@ -11,9 +11,10 @@ router.route("/login").post(authController.login);
 router.route("/").get(authController.protect, userController.getAllUsers);
 
 router
-  .route("/:id")
+  .route("/id")
   .get(userController.getUser)
   .patch(userController.updatePassword)
   .delete(authController.protect, userController.deleteUser);
+
 
 module.exports = router;

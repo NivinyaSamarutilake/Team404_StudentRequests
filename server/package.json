@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test-init": "jest --init",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "docs": "apidoc -i controllers -o docs"
   },
   "repository": {
